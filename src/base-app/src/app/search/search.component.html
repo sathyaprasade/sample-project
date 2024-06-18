@@ -1,0 +1,8 @@
+
+<div>
+    <input #searchID type="text" placeholder="Enter movie/series title" [(ngModel)]="searchQuery">
+    <button (click)="search()">Search</button>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
